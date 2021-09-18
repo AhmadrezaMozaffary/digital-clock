@@ -1,0 +1,33 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(0, 0%, 70%);
+  color: #fff;
+  font-size: 4rem;
+}
+.digital-clock {
+  position: relative;
+  font-size: 0.8em;
+  padding: 50px 100px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 50px black;
+  background: hsl(0, 0%, 40%);
+  transition: all .4s ease;
+}
+
+.clock {
+  font-size: 1.8em;
+  padding: 10px;
+}
+
+.digital-clock:hover {
+    background: hsl(0, 0%, 90%);
+    color: hsl(0, 0%, 30%);
+}
+
+.day-period {
+  font-size: 0.5em;
+}
