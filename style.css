@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -9,13 +15,16 @@ body {
   font-size: 4rem;
 }
 .digital-clock {
-  position: relative;
+  width: 60%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 0.8em;
-  padding: 50px 100px;
   border-radius: 15px;
   box-shadow: 10px 10px 50px black;
   background: hsl(0, 0%, 40%);
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 }
 
 .clock {
@@ -24,10 +33,26 @@ body {
 }
 
 .digital-clock:hover {
-    background: hsl(0, 0%, 90%);
-    color: hsl(0, 0%, 30%);
+  background: hsl(0, 0%, 90%);
+  color: hsl(0, 0%, 30%);
 }
 
 .day-period {
   font-size: 0.5em;
+}
+
+@media screen and (max-width: 425px) {
+  .digital-clock {
+    width: 80%;
+    height: 80%;
+    flex-direction: column;
+    padding: 0;
+  }
+  .digital-clock:hover {
+    background: hsl(0, 0%, 90%);
+    color: hsl(0, 0%, 30%);
+  }
+  .colon {
+    display: none;
+  }
 }
